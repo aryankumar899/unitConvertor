@@ -1,13 +1,16 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
-
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
+import AfterHeroSection from "components/AfterHeroSection";
+import HeroSection from "components/HeroSection";
+import UnitsSystemSection from "components/UnitsSystemSection";
+import FooterSection from "components/FooterSection";
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <HeroSection />
+      <AfterHeroSection />
+      <UnitsSystemSection/>
+      <FooterSection />
+      
+    </>
+  );
 }
