@@ -8,7 +8,7 @@ interface NavbarProps {
 
 const Navbar: FC<NavbarProps> = ({ activeTab, onTabChange }) => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-[1200px] mx-auto">
       <TabsForCalculation activeTab={activeTab} onTabChange={onTabChange} />
     </div>
   );
